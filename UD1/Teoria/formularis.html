@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+</head>
+<body>
+	<header>
+		<h1>Registrarse</h1>
+	</header>
+	<main>
+		<form action="" method="get"> 
+			
+			<h5>Nombre (Mal hecho) <input type="text" name="nombre" id=""></h5>
+		
+			<label for="apellidos">Apellidos</label>
+			
+			<input type="text" name="apellidos" id="apellidos">
+
+			<p><label>
+
+				Email
+				<input type="email" name="email" maxlength="50">
+			</label> </p>
+			
+			<p><label>
+
+				Edad
+				<input type="number" name="edad" required min="18" max="100">
+			</label></p>
+			
+			<p><label>
+
+				Contraseña
+				<input type="password" name="contraseña" required placeholder="Pon una contraseña" minlength="8">
+			</label></p>
+
+				<input type="checkbox" name="check" id="check" checked>
+			<label for="check">
+				Acepto las condiciones
+			</label>
+			<p><label>
+
+				Fecha
+				<input type="date" name="fecha">
+			</label></p>
+
+			
+			
+			<input type="submit" value="Enviar">
+			
+		</form> 
+	</main>
+
+</body>
+</html>
