@@ -9,13 +9,13 @@
 		<h1>Registrarse</h1>
 	</header>
 	<main>
-		<form action="" method="get"> 
+		<form action="#" method="get"> 
 			
 			<h5>Nombre (Mal hecho) <input type="text" name="nombre" id=""></h5>
 		
 			<label for="apellidos">Apellidos</label>
 			
-			<input type="text" name="apellidos" id="apellidos">
+			<input type="text" name="apellidos" id="apellidos" autofocus>
 
 			<p><label>
 
@@ -44,7 +44,43 @@
 				Fecha
 				<input type="date" name="fecha">
 			</label></p>
-
+			<p>
+			<fieldset>
+				<legend>Listas</legend>
+				<label for="inputAssignatiura">Assignatura</label>
+					<select name="assignatura" id="inputAssignatura">
+						<option value="">AWEB</option>
+						<option value="">SI</option>
+						<option value="Serveis en xarxa">SX</option>
+					</select>
+				</p>
+				<p>
+					<label for ="pais">Pais</label>
+					<input list="paises" name="pais" id="pais ">
+					<datalist id="paises">
+						<option value="España">España</option>
+						<option value="Nigeria">Nigeria</option>
+						<option value="Brasil">Brasil</option>
+						<option value="Marruecos">Marruecos</option>
+					</datalist>
+				</p>
+			</fieldset>	
+			<p>
+				<label for="area">Comentari: </label> 
+			</p>
+			<p>
+				<textarea name="comentari" id="area" cols="25" rows="7" placeholder="Escriu el comentari..."></textarea>
+			</p>
+			<p> <p>Gènere</p>
+				<input type="radio" name="genero" id="home" value="home" >
+				<label for="home">Hombre</label>
+				<input type="radio" name="genero" id="dona" value="dona">
+				<label for="dona">Mujer</label>
+				<input type="radio" name="genero" id="altres" value="altres">
+				<label for="altres">Altres</label>
+			</p>
+			
+			
 			
 			
 			<input type="submit" value="Enviar">

@@ -1,44 +1,103 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		.red{
-		color: #BF0000;
-		}
-	</style>
-	<title>Ex8 David Sánchez</title>
-</head>
-<body>
-	<header>
-		<h1>Formulari de registre</h1>
-	</header>
-	<main>
-		<form method="get">
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.red{
+			color: #BF0000;
+			}
+		</style>
+		<title>Formulari de registre – La meva web.</title>
+	</head>
+	<body>
+		<header>
+			<h1>Formulari de registre</h1>
+		</header>
+		<main>
+			<form action="#" method="get">
+				
+				<p>
+					<label>
+						Nom:<span class="red">*</span>
+						<input type="text" name="nom" minlength="2" maxlength="30" autofocus required>
+					</label>
+				</p>
 			
-			<label>
-				<p>Nom:<span class="red">*</span>
-				<input type="text" name="nom" required></p>
-			</label>
-			<label>
-				<p>Primer Cognom:<span class="red">*</span>
-				<input type="text" name="cognom1" required></p>
-			</label>
-			<label>
-				<p>Segon Cognom:
-				<input type="text" name="cognom2"></p>
-			</label>
-			<label>
-				<p>Gènere:<span class="red">*</span>
-				<input type="" name="genere" required></p>
-			</label>
-			<label>
-				<p>Email:<span class="red">*</span>
-				<input type="email" name="email" required></p>
-			</label>
-			
-		</form>
-	</main>
-</body>
-</html>
+				<p>
+					<label>
+						Primer Cognom:<span class="red">*</span>
+						<input type="text" name="cognom1" maxlength="50" required>
+					</label>
+				</p>
+				
+				<p>
+					<label>
+						Segon Cognom:
+						<input type="text" name="cognom2" maxlength="50">
+					</label>
+				</p>
+				
+				<p>
+					Gènere:<span class="red">*</span>
+					<input type="radio" id="home" name="genere" value="home" required>
+					<label for="home">
+						Home
+					</label>
+					
+					<input type="radio" id="dona" name="genere" value="dona" required>
+					<label for="dona">
+						Dona
+					</label>
+					
+					<input type="radio" id="nobin" name="genere" value="nobin" required>
+					<label for="nobin">
+						No binari
+					</label>
+				</p>
+				
+				<p>
+					<label>
+						Email:<span class="red">*</span>
+						<input type="email" name="email" maxlength="100" required>
+					</label>
+				</p>
+				
+				<p>
+					Descripció:
+					<label>
+						<textarea name="descripcio" maxlength="300" cols="50" rows="10" placeholder="Entra una descripció amb un màxim de 300 caràcters..."></textarea>
+					</label>
+				</p>
+				
+				<hr>
+				
+				<h2>Consentiment</h2>
+				
+				<p>
+					<label>
+						<input type="checkbox" name="check1" id="check1" checked>
+						Vull rebre informació amb les darreres novetats i ofertes personalitzades.
+					</label>
+				</p>
+				
+				<p>
+					<label>
+						<input type="checkbox" name="check2" id="check2">
+						Declar haver llegit i acceptar les <a href="#cond">condicions generals</a> de l'aplicació i la normativa sobre protecció de dades personals.
+					</label>
+				</p>
+
+				<input type="submit" value="Enviar">
+			</form>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3 id="cond">Condicions generals</h3>
+			<p><small><strong>Identificació del tractament: </strong>David Sánchez Cabanillas.</small></p>
+			<p><small><strong>Responsable del tractament: </strong>Empresa S.L.</small></p>
+			<p><small><strong>Finalitat del tractament: </strong>Gestionar els diferents enviaments d'informació derivats del registre de l'usuari.</small></p>
+			<p><small><strong>Legitimació: </strong>Consentiment de la persona interessada</small></p>
+			<p><small><strong>Persones destinatàries: </strong>Les encarregades del tractament que proveeixen, per compte de l'empresa. Les dades no es comunicarán a altres categories de destinatais, excepte en els casos previstos per la llei</small></p>
+			<p><small><strong>Dades de les persones interessades: </strong>sol·licitar l'accés, rectificació o supressió de les dades i la limitació o oposició al tractament. Cal utilitzar els formularis i el procediment disponibles.</small></p>
+		</main>
+	</body>
+	</html>
