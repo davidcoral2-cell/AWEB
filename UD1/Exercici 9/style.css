@@ -1,3 +1,7 @@
 .red{
 	color: #BF0000;
 }
+legend{
+	font-size: 24px; 
+	font-weight: bold;
+}
