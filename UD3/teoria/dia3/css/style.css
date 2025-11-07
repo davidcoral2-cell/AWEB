@@ -1,0 +1,19 @@
+@font-face {
+    font-family: alias;
+    src: url(../assets/Poppins/Poppins-Black.ttf);
+}
+
+.contenedor{
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+main div:first-child{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    font-family: alias;
+}
+main div:last-child{
+    background-color: chartreuse;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pàgina d'informació personal - Claudia Ferrer</title>
+</head>
+<body>
+	<header>
+		<h1 id="inici">Clàudia Ferrer</h1>
+		<p><b>Desenvolupadora web</b> i <i>apassionada pel disseny accessible.</i></p>
+		<p><a href="#contacte">Contacta'm</a> · <a href="#aficions">Aficions</a> · <a href="#mi">Sobre mi</a></p>
+		<form action="#" method="get">
+			<input type="text" name="busqueda" placeholder="Cerca...">
+			<input type="button" value="Cerca">
+		</form>
+	</header>
+	<main>
+		<hr>	
+		<section>
+			<h2 id="mi">Sobre mi</h2>
+			<img src="img/avatar.png" alt="avatar">
+			<p>Sóc na <b>Clàudia</b>, una persona entusiasta de la tecnologia i l'educació. M'interessa especialment l'accessibilitat i la millora de l'experiència d'usuari. Un dels meus lemes preferits és: </p>
+			<blockquote cite="">
+				<p>"Dissenyar no només perquè funcioni, sinó perquè tothom ho pugui utilitzar."</p>
+			</blockquote>
+			<p>Dades addicionals: formació contínua · experiència en projectes col·laboratius · publicacions en format <abbr>HTML</abbr>.</p>
+		</section>
+		<section>
+			<h3>Competències</h3>
+			<ul>
+				<li>Infromàtica
+				<ul>
+						<li>Programació
+						<ul>
+							<li>HTML / <i>semántica</i></li>
+							<li>Gestió de base de dades</li>
+						</ul>			
+						</li>
+						<li>Diseny web</li>
+				</ul>
+				</li>
+				<li>Treball en equip</li>
+				<li>Comunicació i documentació</li>
+			</ul>
+		</section>
+		<hr>
+		<section>
+			<h2 id="aficions">Aficions</h2>
+			<p>Algunes aficions que m'agraden:</p>
+			<ul><u>
+				<li>Fotografia</li>
+				<li>Senderisme</li>
+				<li>Lectura tècnica i científica</li>
+			</u></ul>
+			<p>Per a saber-ne més sobre fotografia, visita: <a href="https://ca.wikipedia.org/wiki/Fotografia" target="__blank">Fotografia (Viquipèdia)</a></p>
+		</section>
+		<hr>
+		<section>
+			<h2 id="contacte">Contacte</h2>
+			<p>Si vols enviar-me un missatge, omple el formulari següent:</p>
+			<form action="#" method="get">
+				<p><label for="Nom">Nom complet</label>
+				<input type="text" name="Nom" placeholder="Nom i cognoms" minlength="5" maxlength="20" required></p>
+				<p><label for="mail">Correu electrònic</label>
+				<input type="mail" name="mail" placeholder="exemple@domini.cat" required></p>
+				<p><label for="tema">Tema</label>
+				<select name="tema" id="inputTema">
+					<option value="">-- Selecciona un tema --</option>
+					<option value="">Consulta</option>
+					<option value="">Suggeriment</option>
+					<option value="">Altres</option>
+				</select>
+				<p><label for="mis">Missatge</label></p>
+				<p><textarea name="mis" cols="40" rows="7" placeholder="Escriu el teu missatge aquí..." required></textarea></p>
+				<p><input type="checkbox" name="terms" required>
+				<label for="terms">En enviar aquest formulari acceptes que es tractin les teves dades d'acord amb la nostra política de privacitat. </label></p>
+				<p><input type="submit" value="Envia"></p>
+			</form>
+			<p>Tornar a l'<a href="#inici">inici de la pàgina</a></p>
+		</section>
+		<hr>
+	</main>
+	<footer>
+		<p>&copy; 2025 Clàudia Ferrer</p>
+	</footer>
+</body>
+</html>

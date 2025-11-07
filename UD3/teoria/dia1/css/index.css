@@ -1,0 +1,24 @@
+* /*Para TODA la PAGINA*/{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+  background-color: antiquewhite;
+  opacity: 0.8;
+}
+#paragraf1 {
+  color: blueviolet;
+}
+.paragraf2 {
+  color: green;
+}
+header h1, h2{
+  text-decoration: underline;
+}
+
+section.section1{
+  color: aqua;
+}
+section#section2{
+  color: brown;
+}

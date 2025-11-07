@@ -1,0 +1,12 @@
+* {
+    background-color: var(--color-fondo);
+}
+
+:root{
+    --color-amarillo: #ffc857;
+    --color-negro: #02020A;
+    --color-azul: #166088;
+    --color-gris: #4F6D7A;
+    --color-fondo: #DBE9EE;
+}
+

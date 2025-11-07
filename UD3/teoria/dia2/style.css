@@ -1,0 +1,52 @@
+/*Combinadors*/
+/* 1. Descendent */
+section p{
+    color: blue;
+    /* color: var(--color-blau); */
+}
+/* Fill directe */
+section > p{
+    color: brown;
+}
+/* Germà adjacent */
+h2 + p{
+    text-decoration: underline;
+}
+/* Qualsevol germà */
+h2 ~ p{
+    font-style: italic;
+}
+/* Recordatori */
+/* Selector universal */
+* {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: chocolate;
+    /* padding: 20px; */
+    height: 100px;
+    /* margin-right: 20px;
+    margin-bottom: 20px; */
+
+    /* en orden del reloj Arr, der, abajo, izq */
+    margin: 10px 20px 5px 30px; 
+    /* Bordes */
+    border: 10px black;
+}
+
+main{
+    background-color: rgb(183, 140, 223);
+
+}
+
+.negrita{
+    font-weight: bold;
+    background-color:antiquewhite; 
+    color: black;
+}
+:root{
+    --color-blau: #004466;
+}
+
