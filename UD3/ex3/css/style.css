@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     text-align: center;
     background-color: var(--color-fondo);
 }
@@ -32,7 +35,7 @@ header a{
 
 header a:hover {
     font-weight: bold;
-    color: black;
+    color: black;   
     text-decoration: underline;
 }
 
@@ -41,6 +44,7 @@ main h1:first-child, form h3{
 }
 main h1:first-child{
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 main form{
     
@@ -48,6 +52,12 @@ main form{
     border-radius: 10px;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+form input:focus, form  textarea:focus{
+    outline: var(--color-amarillo); 
+    border-color: var(--color-amarillo);
+    /* box-shadow: --color-amarillo; */
 }
 
 form label, form p{
@@ -62,11 +72,42 @@ form input, form textarea{
     text-align: left;
 }
 
+form textarea{
+    width: 90%;
+    height: auto;
+}
+
 form hr{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 
+input[type="radio"], input[type="checkbox"]{
+    accent-color: var(--color-verde);
+}
+
+input[type="checkbox"]{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+input[type="submit"]{
+    text-align: center;
+    background-color:var(--color-amarillo);
+    width: 65px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-mostaza);
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color:var(--color-mostaza);
+}
+
+form a{
+    color: var(--color-header);
+}
 
 

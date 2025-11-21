@@ -1,0 +1,147 @@
+:root{
+    --color-gris: #3d3b3b;
+    --color-azuloscuro:#2f3039;
+    --color-crema:#fcf1de;
+    --color-rojo:#aa0404;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-crema);
+    color: var(--color-azuloscuro);
+}
+
+header, main{
+    padding: 20px;
+}
+
+header{
+    left: 50px;
+    position: relative;
+}
+header, footer{
+    background-color: var(--color-gris);
+    color : var(--color-crema);
+}
+
+/* header nav{
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+#btn-menu{
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav{
+    display: none;
+    text-align: center;
+    position: fixed;
+    background-color: var(--color-azuloscuro);
+    z-index: 10000;
+    inset: 0;
+}
+
+header nav span{
+    display: block;
+}
+
+.nav-visible{
+    display: block;
+    right: 180px;
+}
+
+main{
+    height: 1400px;
+}
+
+.pare{
+    position: relative;
+    display: block;
+    background-color: var(--color-azuloscuro);
+    color: var(--color-crema);
+    height: 200px;
+}
+.pare div{
+    position: absolute;
+    background-color: var(--color-rojo);
+    width: 50px;
+    height: 50px;
+}
+.pare div:first-child{
+    left: 20px;
+    top: 40px;
+    background-color: white;
+    z-index: 1;
+}
+
+.pare div:nth-child(2){
+    left: 50px;
+    top: 45px;
+    background-color: var(--color-rojo);
+    z-index: 2;
+}
+
+
+img[alt="logo"]{
+    width: 50px;
+    height: auto;
+}
+
+.menu-sticky{
+    padding: 20px;
+    background-color: var(--color-rojo);
+    color: var(--color-crema);
+    position:sticky;
+    top: 0;
+}
+
+#btn-menu:hover, nav span{
+    cursor: pointer;
+}
+
+footer{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+}
+
+/* Position: static, realtive, absolute, fixed, sticky*/
+/* left, right, bottom, top, z-index */
+
+
+@media (min-width: 700px){
+    header nav{
+        display: initial;
+        /*display: block; */
+    }
+
+    #btn-menu{
+        display: none ;
+    }
+
+    header nav{
+    position: absolute;
+    inset: auto;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+   }
+
+   nav span{
+    display: inline;
+    padding: 0 10px;
+    text-align: right;
+   }
+
+}
