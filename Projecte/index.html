@@ -4,66 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecte AWEB</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <button> <!--Boton de menú-->
-            
-        </button>
         <nav>
-            <input> <!--Buscador de eventos-->
-            </input>
-        </nav>
-        <button> <!--Perfil-->
+            <button> <!--Boton de menú-->
+                Menu
+            </button>
 
-        </button>
+            <form method="get" id="buscarform"> <!--Buscador de Eventos-->
+                <input type="text" id="" placeholder="Buscar"  />
+                <input class="button" type="submit" value="Lupa" />
+                <i class="search"></i>
+            </form>
+
+            <button> <!--Perfil-->
+                Perfil
+            </button>
+        </nav>
     </header>
 
     <main>
-        <h1>Página Principal</h1>
-        <div class="slider" id="slider"> <!--Slider-->
-            <ul class="slides">
-                <li>
-                    <a href="">
-                        <img src="" alt="Imagen 1">
-                        <p>Texto 1</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="" alt="Imagen 2">
-                        <p>Texto 2</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="" alt="Imagen 3">
-                        <p>Texto 3</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="" alt="Imagen 4">
-                        <p>Texto 4</p>
-                    </a>
-                </li>
-            </ul>
-            <ul class="sliderctr">
-                <li>
-                    <a href="#slide1">&bullet;</a>
-                </li>
-                <li>
-                    <a href="#slide2">&bullet;</a>
-                </li>
-                <li>
-                    <a href="#slide3">&bullet;</a>
-                </li>
-                <li>
-                    <a href="#slide4">&bullet;</a>
-                </li>
-            </ul>
-        </div>
+        <section>
+            <h1>Página Principal</h1>
+            <p><img src="./assets/img/concierto1.jpg" alt="Slider de eventos">
+            Slider</p>
+            <h3>------ controlador de slider ------</h3>
+        </section>
+        <hr>
+        <section>
+            <h1>Destacados</h1>
+            <button>Siguiente</button>
+            <img src="assets/img/concierto2.jpg" alt="Video">
+        </section>
+        <hr>
+        <section>
+            <article><p>Reserva tus entradas ya!</p></article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6024.307508954133!2d4.26336208870359!3d39.883786283156105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sca!2ses!4v1764153942995!5m2!1sca!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
 
     </main>

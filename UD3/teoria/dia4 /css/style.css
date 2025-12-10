@@ -29,13 +29,6 @@ header, footer{
     color : var(--color-crema);
 }
 
-/* header nav{
-    position: absolute;
-    right: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-} */
-
 #btn-menu{
     position: absolute;
     right: 100px;
@@ -45,7 +38,6 @@ header, footer{
 
 header nav{
     display: none;
-    text-align: center;
     position: fixed;
     background-color: var(--color-azuloscuro);
     z-index: 10000;
@@ -54,6 +46,15 @@ header nav{
 
 header nav span{
     display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    border-bottom: 1px solid #5555;
+}
+
+.close{
+    display: block;
+    padding: 20px 0;
 }
 
 .nav-visible{
@@ -143,5 +144,7 @@ footer{
     padding: 0 10px;
     text-align: right;
    }
-
+   nav img{
+    display: none;
+   };
 }

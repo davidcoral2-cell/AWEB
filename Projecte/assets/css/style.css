@@ -1,0 +1,21 @@
+:root{
+    --color-amarillo: #ffc857;
+    --color-negro: #02020A;
+    --color-azul: #166088;
+    --color-gris: #4F6D7A;
+    --color-fondo: #DBE9EE;
+}
+
+* {
+    background-color: var(--color-fondo);
+}
+
+header nav button, header nav form{
+    position: relative; 
+    display: inline-block;
+}
+
+header nav button{
+    position: relative;
+    right: 0;
+}
